@@ -21,7 +21,7 @@
   },
   "include": [
     "src/**/*",
-    "typePatches/**/*"
+    "typePatches/**/*.d.ts"
   ],
   "exclude": [
     "node_modules",
