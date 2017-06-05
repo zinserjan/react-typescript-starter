@@ -1,4 +1,5 @@
 import * as React from "react";
+import Button from "component/button/Button";
 import "./App.css";
 
 const logo = require("./logo.svg");
@@ -13,6 +14,8 @@ class App extends React.Component<{}, null> {
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
+
+          <Button>Really cool button component</Button>
         </p>
       </div>
     );
