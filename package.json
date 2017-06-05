@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
@@ -12,6 +13,7 @@
     "@storybook/addon-links": "^3.0.0",
     "@storybook/addon-storyshots": "^3.0.0",
     "@storybook/react": "^3.0.0",
+    "@types/classnames": "^2.2.0",
     "@types/jest": "^19.2.4",
     "@types/node": "^7.0.27",
     "@types/react": "^15.0.26",
