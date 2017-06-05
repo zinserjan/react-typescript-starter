@@ -17,3 +17,13 @@ exports[`Storyshots Button with text 1`] = `
   Hello Button
 </button>
 `;
+
+exports[`Storyshots Container default 1`] = `
+<div>
+  <button
+    className="red"
+  >
+    Test
+  </button>
+</div>
+`;
