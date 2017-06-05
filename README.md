@@ -23,6 +23,17 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
+### `npm run storybook`
+
+Runs storybook in development mode.<br>
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
+Now you can change components and write stories whenever you need to. You’ll get those changes into Storybook in a snap with the help of Webpack’s HMR API.
+
+### `npm run build-storybook`
+
+Builds the storybook for production to the `storybook-static` folder.<br>
+
 ## Folder Structure
 
 For the project to build, **these files must exist with exact filenames**:
