@@ -20,6 +20,9 @@
     "@types/react-dom": "^15.5.0",
     "@types/webpack-env": "^1.13.0",
     "@zinserjan/react-scripts-ts": "2.2.5",
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.0",
+    "prettier": "^1.4.2",
     "react-test-renderer": "^15.5.4"
   },
   "scripts": {
@@ -27,6 +30,14 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "format": "prettier --trailing-comma es5 --print-width 120 --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --trailing-comma es5 --print-width 120 --write",
+      "git add"
+    ]
   }
 }
