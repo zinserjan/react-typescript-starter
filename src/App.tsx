@@ -5,6 +5,12 @@ import "./App.css";
 const logo = require("./logo.svg");
 
 class App extends React.Component<{}, null> {
+  handleClick() {
+    this.setState({
+      test: true,
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -15,7 +21,7 @@ class App extends React.Component<{}, null> {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
 
-          <Button>Really cool button component</Button>
+          <Button onClick={this.handleClick}>Really cool button component</Button>
         </p>
       </div>
     );
